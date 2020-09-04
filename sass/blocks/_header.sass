@@ -1,0 +1,45 @@
+.logo
+  text-transform: uppercase
+  text-decoration: none
+  padding-right: 1rem
+  &__text
+    font: normal 700 2.4rem "Montserrat"
+    &--light
+      color: $text-color-light
+    &--accent
+      color: $accent-color
+
+.header
+  background-color: $text-color-grey
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    padding: 8rem 10rem
+  
+.nav
+  &__list
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    margin: 0
+    padding: 0
+    list-style-type: none
+  &__item
+    margin-left: 8rem
+  &__link
+    font: normal 300 1.4rem "Montserrat"
+    text-transform: uppercase
+    color: $text-color-light
+
+.mmenu
+  background: transparent
+  &__line
+    display: block
+    width: 30px
+    height: 3px
+    margin: 5px 0
+    background-color: #a4a4a4
+  &--hidden
+    display: none
