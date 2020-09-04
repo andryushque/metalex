@@ -34,8 +34,13 @@
     font: normal 300 1.4rem "Montserrat"
     text-transform: uppercase
     color: $text-color-light
+    &:hover
+      text-decoration: none
+      color: $accent-color
+      transition: color 0.3s ease
 
 .mmenu
+  display: none
   background: transparent
   &__line
     display: block
@@ -43,5 +48,16 @@
     height: 3px
     margin: 5px 0
     background-color: #a4a4a4
-  &--hidden
-    display: none
+  &:hover
+    .mmenu
+      &__line
+        background-color: $accent-color
+        transition: background-color 0.3s ease
+  &.active
+    .mmenu
+      &__line
+        background-color: rgba($accent-color, 0.8)
+    &:hover
+      .mmenu
+        &__line
+          background-color: $accent-color
