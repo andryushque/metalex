@@ -5,7 +5,8 @@ html
   font-size: 10px
 
 body
-  background: #fff
+  position: relative
+  background: $text-color-light
   font-family: "Montserrat", Helvetica, sans-serif
 
 .container
@@ -23,6 +24,18 @@ img
   cursor: pointer
   word-break: break-word
   text-decoration: none
+  &--accent
+    width: 240px
+    height: 64px
+    text-align: center
+    background: transparent
+    border: 2px solid $accent-color
+    font: normal 300 14px "Montserrat"
+    text-transform: uppercase
+    color: rgba($text-color-light, 0.8)
+    &:hover
+      color: $text-color-light
+      transition: color 0.3s ease
 
 .link
   text-decoration: none
@@ -30,3 +43,8 @@ img
   &:hover
     cursor: pointer
     text-decoration: underline
+
+.title
+  margin-top: 0
+  margin-bottom: 0
+  word-break: break-word
