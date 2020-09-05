@@ -36,7 +36,7 @@ $(document).ready(function () {
 
   btn.on("click", function (e) {
     e.preventDefault();
-    $("html, body").animate({ scrollTop: 0 }, "1000");
+    $("html, body").animate({ scrollTop: 0 }, 1000);
   });
 
   /*=== Smooth Scrolling to Anchor ===*/
