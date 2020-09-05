@@ -1,0 +1,39 @@
+.products
+  padding: 14rem 0 4rem
+  background: #313131
+  color: $text-color-light
+
+  &__title
+    text-align: center
+    @include section-title()
+    &::after
+      left: 50%
+      transform: translateX(-50%)
+      @include section-title-line()
+
+  &__cards
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+  &__card
+    display: flex
+    width: 32%
+    margin-bottom: 10rem
+  &__image-wrapper
+    min-width: 10rem
+    min-height: 10rem
+    margin-right: 2rem
+  &__image
+    width: 10rem
+    height: 10rem
+    object-fit: cover
+    border-radius: 50%
+
+  &__name
+    margin-bottom: 3rem
+    font: normal 400 1.6rem "Montserrat"
+    text-transform: uppercase
+  &__text
+    font: normal 300 1.4rem "Opensans"
+    color: $text-color-grey
