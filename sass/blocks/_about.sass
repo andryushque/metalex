@@ -1,0 +1,54 @@
+.about
+  padding: 14rem 0
+  background-color: $text-color-light
+  color: $text-color-dark
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+  &__item
+    &:first-child
+      width: 40%
+      padding-right: 5rem
+    &:last-child
+      width: 60%
+      display: flex
+      justify-content: center
+      align-items: center
+      min-height: 54rem 
+      background: rgba($text-color-dark, 0.5)
+  &__title
+    position: relative
+    margin-bottom: 7rem
+    font: normal 400 3rem "Montserrat"
+    text-transform: uppercase
+    &::after
+      content: ""
+      position: absolute
+      top: 5rem
+      left: 0
+      z-index: 1
+      display: block
+      width: 8rem
+      height: 0.2rem
+      background-color: $accent-color
+  &__subtitle
+    margin-bottom: 4rem
+    font: normal 400 2.4rem "Montserrat"
+  &__text
+    margin-bottom: 4rem
+    font: normal 300 1.6rem "Opensans"
+
+  &__button
+    width: 10rem
+    height: 10rem
+    border: 4px solid $text-color-light
+    border-radius: 50%
+    background: transparent
+    font-size: 3rem
+    color: $text-color-light
+    &:hover
+      border: 4px solid $accent-color
+      color: $accent-color
+      transition: border 0.3s ease, color 0.3s ease
