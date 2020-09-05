@@ -7,9 +7,8 @@ $(document).ready(function () {
   });
 
   /*=== Fixed header ===*/
-  let navOffsetTop = $(".header").height() + 50;
-
-  function fixNavbarOnTop() {
+  var navOffsetTop = $(".header").height() + 90;
+  function fixNeaderOnTop() {
     if ($(".header").length) {
       $(window).scroll(function () {
         let scroll = $(window).scrollTop();
@@ -23,6 +22,20 @@ $(document).ready(function () {
       });
     }
   }
+  fixNeaderOnTop();
 
-  fixNavbarOnTop();
+  /*=== To Top Button ===*/
+  var btn = $(".top-button");
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 400) {
+      btn.addClass("show");
+    } else {
+      btn.removeClass("show");
+    }
+  });
+
+  btn.on("click", function (e) {
+    e.preventDefault();
+    $("html, body").animate({ scrollTop: 0 }, "300");
+  });
 });
