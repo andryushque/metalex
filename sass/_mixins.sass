@@ -1,0 +1,17 @@
+@mixin section-title()
+  position: relative
+  margin-bottom: 7rem
+  font: normal 400 3rem "Montserrat"
+  text-transform: uppercase
+
+@mixin section-title-line()
+  content: ""
+  position: absolute
+  top: 5rem
+  //left: 50%
+  //transform: translateX(-50%)
+  z-index: 1
+  display: block
+  width: 8rem
+  height: 0.2rem
+  background-color: $accent-color

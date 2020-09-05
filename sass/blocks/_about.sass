@@ -18,21 +18,13 @@
       align-items: center
       min-height: 54rem 
       background: rgba($text-color-dark, 0.5)
+  
   &__title
-    position: relative
-    margin-bottom: 7rem
-    font: normal 400 3rem "Montserrat"
-    text-transform: uppercase
+    @include section-title()
     &::after
-      content: ""
-      position: absolute
-      top: 5rem
       left: 0
-      z-index: 1
-      display: block
-      width: 8rem
-      height: 0.2rem
-      background-color: $accent-color
+      @include section-title-line()
+
   &__subtitle
     margin-bottom: 4rem
     font: normal 400 2.4rem "Montserrat"
