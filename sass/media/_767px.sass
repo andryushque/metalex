@@ -47,13 +47,36 @@
   .about
     padding: 6rem 0
     &__item
+      &:first-child
+        display: flex
+        flex-direction: column
+        align-items: center
       &:last-child
         min-height: 40rem
     &__title
       margin-bottom: 6rem
       font-size: 2.6rem
+      text-align: center
+      &::after
+        left: 50%
+        transform: translateX(-50%)
     &__subtitle
       margin-bottom: 3rem
       font-size: 2rem
+      text-align: center
     &__text
       margin-bottom: 3rem
+      text-align: center
+
+  .services
+    &__cards
+      flex-direction: column
+    &__card
+      width: 75%
+      margin-bottom: 4rem
+      &:last-child
+        margin-bottom: 0
+    &__image
+      margin-bottom: 3rem
+    &__title
+      font-size: 2.6rem

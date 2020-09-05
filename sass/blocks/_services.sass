@@ -1,0 +1,40 @@
+.services
+  padding: 12rem 0
+  background-color: #f8f8f8
+  color: $text-color-dark
+
+  &__title
+    position: relative
+    margin-bottom: 7rem
+    font: normal 400 3rem "Montserrat"
+    text-transform: uppercase
+    text-align: center
+    &::after
+      content: ""
+      position: absolute
+      top: 5rem
+      left: 50%
+      transform: translateX(-50%)
+      z-index: 1
+      display: block
+      width: 8rem
+      height: 0.2rem
+      background-color: $accent-color
+
+  &__cards
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+  &__card
+    width: 32%
+    background-color: $text-color-light
+  &__image
+    display: block
+    max-height: 28rem
+    width: 100%
+    object-fit: cover
+    margin-bottom: 4rem
+  &__text
+    padding: 0 3rem 4rem
+    font: normal 300 1.6rem "Opensans"
