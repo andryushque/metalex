@@ -7,12 +7,12 @@ $(document).ready(function () {
   });
 
   /*=== Fixed header ===*/
-  var navOffsetTop = $(".header").height() + 90;
-  function fixNeaderOnTop() {
+  var headerOffsetTop = $(".header").height() + 90;
+  function fixHeaderOnTop() {
     if ($(".header").length) {
       $(window).scroll(function () {
         let scroll = $(window).scrollTop();
-        if (scroll >= navOffsetTop) {
+        if (scroll >= headerOffsetTop) {
           $(".header").addClass("header--fixed");
           $(".header").removeClass("header-bg");
         } else {
@@ -22,7 +22,7 @@ $(document).ready(function () {
       });
     }
   }
-  fixNeaderOnTop();
+  fixHeaderOnTop();
 
   /*=== To Top Button ===*/
   var btn = $(".top-button");
