@@ -1,0 +1,43 @@
+.news
+  padding: 14rem 0
+  background-color: $text-color-light
+  color: $text-color-dark
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &__item
+    &:first-child
+      width: 40%
+      padding-right: 5rem
+    &:last-child
+      width: 60%
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+  
+  &__title
+    @include section-title()
+    &::after
+      left: 0
+      @include section-title-line()
+
+  &__subtitle
+    margin-bottom: 4rem
+    font: normal 400 2.4rem "Montserrat"
+  &__text
+    margin-bottom: 4rem
+    font: normal 300 1.6rem "Opensans"
+
+  &__card
+    width: 48%
+    &:nth-child(-n+2)
+      margin-bottom: 4rem
+  &__image
+    display: block
+    max-height: 20rem
+    width: 100%
+    object-fit: cover
+    margin-bottom: 2rem
+  &__content
+    font: normal 300 1.6rem "Opensans"

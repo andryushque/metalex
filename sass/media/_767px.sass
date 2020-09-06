@@ -126,3 +126,25 @@
       font-size: 2.6rem
     &__item
       width: 50%
+
+  .news
+    padding: 6rem 0
+    &__item
+      &:first-child
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__title
+      margin-bottom: 6rem
+      font-size: 2.6rem
+      text-align: center
+      &::after
+        left: 50%
+        transform: translateX(-50%)
+    &__subtitle
+      margin-bottom: 3rem
+      font-size: 2rem
+      text-align: center
+    &__text
+      margin-bottom: 3rem
+      text-align: center
