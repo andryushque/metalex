@@ -46,8 +46,12 @@ $(document).ready(function () {
     .not('[href="#0"]')
     .click(function (event) {
       // Hide mobile menu on scrolling
-      $(".mmenu").toggleClass("active");
-      $(".nav").toggleClass("nav--hidden");
+      if ($(".mmenu").hasClass("active")) {
+        $(".mmenu").removeClass("active");
+      }
+      if (!$(".nav").hasClass("nav--hidden")) {
+        $(".nav").addClass("nav--hidden");
+      }
       // On-page links
       if (
         location.pathname.replace(/^\//, "") ==
