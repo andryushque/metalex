@@ -1,0 +1,61 @@
+.footer
+  color: $text-color-grey
+  &-top
+    padding: 14rem 0
+    background-color: #313131
+  &-bottom
+    padding: 4rem 0
+    background-color: #484848
+
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &__item
+    width: 15%
+    &:first-child
+      width: 40%
+      padding-right: 6rem
+    &:nth-child(2)
+      width: 30%
+  &__text
+    margin-top: 3rem
+    font: normal 400 1.6rem "Opensans"
+
+  &__list
+    margin: 6rem 0 0
+    padding: 0
+    list-style-type: none
+  &__listitem
+    margin-bottom: 2.4rem
+  &__link
+    font: normal 400 1.6rem "Opensans"
+    color: $text-color-grey
+    &:hover
+      text-decoration: none
+      color: $accent-color
+      transition: color 0.3s ease
+
+  .copyright
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &__text
+      font: normal 400 1.4rem "Opensans"
+      color: $text-color-grey
+      text-transform: uppercase
+      word-break: break-word
+      &--accent
+        color: $accent-color
+    &__social
+      display: flex
+      align-items: center
+    &__link
+      margin-left: 2rem
+      font-size: 2rem
+      color: $text-color-grey
+      &:hover
+        text-decoration: none
+        color: $accent-color
+        transition: color 0.3s ease
+
