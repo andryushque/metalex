@@ -1,0 +1,29 @@
+.partners
+  padding: 12rem 0
+  background: $accent-color
+  color: $text-color-light
+  &-wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  &__title
+    @include section-title--light()
+    &::after
+      left: 0
+      @include section-title-line--light()
+
+  &__info
+    width: 40%
+  &__content
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+  &__item
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 25%
+  &__image
+    max-height: 12rem
